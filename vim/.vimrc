@@ -33,7 +33,7 @@ source ~/vimdotfiles/.vimrc.color
 "unite.vim設定読み込み
 source ~/vimdotfiles/.vimrc.unite
 "neocomplcache設定読み込み
-source ~/vimdotfiles/.vimrc.neocomplcache
+source ~/vimdotfiles/.vimrc.neocomplete
 
 " クリップボード共通か設定
 "set clipboard=unnamed,autoselect

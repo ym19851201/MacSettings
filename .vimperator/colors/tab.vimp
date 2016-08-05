@@ -1,1 +1,0 @@
-tabbrowser[treestyletab - style][treestyletab - mode] .tabs - stack,  tabbrowser[treestyletab - style][treestyletab - mode] .tabbrowser - tabs,  tabbrowser[treestyletab - style][treestyletab - tabbar - position] .tabbrowser - tabs { background: transparent !important; }
