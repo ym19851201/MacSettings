@@ -1,11 +1,15 @@
 "neobundle乗り換え
-filetype off
-if has('vim_starting')
-  set runtimepath+=~/.vim/neobundle.vim.git
-  call neobundle#rc(expand('~/.vim/.bundle'))
+if 0 | endif
+
+if &compatible
+  set nocompatible
 endif
 
-NeoBundle 'Shougo/neocomplcache'
+set runtimepath^=~/.vim/bundle/neobundle.vim/
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'mattn/emmet-vim'
@@ -15,16 +19,17 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'EnhCommentify.vim'
-NeoBundle 'rails.vim'
 NeoBundle 'open-browser.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'mattn/mkdpreview-vim'
+call neobundle#end()
 
-filetype plugin on
-filetype indent on
+filetype plugin indent on
+NeoBundleCheck
+
 
 let g:airline_powerline_fonts=1
 
